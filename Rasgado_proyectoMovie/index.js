@@ -77,7 +77,15 @@ cons runcomparasion = () => {
  const rightsidestats = document.querySelectorAll('#left-summary .notification')
                                  
 leftsideStats.forEach((leftstats,index) => {
+const rightStat = rightsideStats[index]
+    const leftsideValue = parseInt (leftstat.dataset.value)
+    const rightsidevalue = porseint(reightstart.dataset.value)
+    const rightsidevalue = parseint(rightstat.dataset.value)
 
+    if(rightsidevalue > leftsidevalue){
+        leftstat.classlist.remove.('is-primary')
+        rightstat.classlist.add('is-danger')
+}
 
 })
 
