@@ -12,9 +12,80 @@ return []
 
 }
 
-console.log(response.data.Search)
+console.log(response.data)
+    console.log(responese.data)
+    console.response.data.search
+//fetchData()
 
+    autocompleteconfig = {
+        renderOption(movie){
+            const imgsrc = movie.poster === 'N/A' ? ''movie.poster
+        return`
+        <img src="${imgSrc}" />
+        ${movie.title} (${movie.year})
+        
+        `
+
+},
+        inputValue(movie){
+            return movie.title
+        }
+        async fetchData(searchTerm){
+            apiMovieURL = 'htt://ww.owdapi.com/'
+            const response = await axios.get(apiMovieURL,{
+                params; {
+                paikey: 'd9edc03c'
+                s: searchTerm
+            }
+        })
+        console.log(response.data)
+    return response.data.search
 }
+}
+createAutocomplete({
+    ...autocompleteconfig,
+    root, document.queryselector('#left-autocomplete'),
+                   onOptionSelect(movie){
+    document.querySelector('.tutorial').classlist.add('is-hidden')
+    onmovieselect(movie,document.queryselector('#left-sumary'), 'left'
+
+
+                  const onMovieselect=(movie, summaryelement,side)=>{
+        const response = await axios.get('http://www.omdbapi.com/,{
+                                         params: {
+            apikey: 'd9edc03c',
+                i: movie.imdbid
+        }
+    })
+    console.log(response.data)
+    summaryElement.innerHTml = movieTemplate(response.data)
+    //preguntamos cual lado es?
+    if(side === 'left'){
+        leftMovie = response.data
+    }else{ 
+        rigMovie = response.data
+        }
+    //preguntamos si tenemos ambos lados
+if(leftMovie && rightMovie){
+    //entonces ejecutamos la funcion de comparacion
+    runComparasion()
+}
+}
+cons runcomparasion = () => {
+    console.log(comparacion de peliculas)
+    const leftsideStats = document.querySelectorAll('#left-summary .notificatios')
+ const rightsidestats = document.querySelectorAll('#left-summary .notification')
+                                 
+leftsideStats.forEach((leftstats,index) => {
+
+
+})
+
+
+
+
+
+                  
 const root = document.querySelector('.autocomplete')
 root.innerHTML = `
 <label><b>busqueda de Peliculas </b></label>
