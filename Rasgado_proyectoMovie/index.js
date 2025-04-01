@@ -89,6 +89,26 @@ const rightStat = rightsideStats[index]
 
 })
 
+movietemplate = (moviedetails) => {
+    ars = persaint(moviedetails.bocoffice.replace(/\$/&, '').replace
+    console.log(DOLLARS)
+    const metascor = parseint(moviedetails.vetascore)
+    const imdbrating = parseInt(moviedetails.imdbrating)
+    const imdbvotes parseint(moviedetails.imdbvotes.replace(/,/&,''))
+console.log(metascore,imdbrating, imdbvotes)
+cibst awards = moviedetails.awards.split ('').reduce((prev, word)) =>{
+    const value = parseint(word)
+    if(isNaN(value)){
+        return prev
+    }els{
+        return prev + value
+    }
+, 0)
+    }
+}
+
+}
+console.log('awards', award)
 
 
 
