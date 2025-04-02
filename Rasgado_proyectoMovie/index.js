@@ -111,6 +111,51 @@ cibst awards = moviedetails.awards.split ('').reduce((prev, word)) =>{
 console.log('awards', award)
 
 
+// agregar ka ore
+return `
+<carticle class="media">
+<figure class="media-left">
+</p class="image">
+<img src="$(moviedetails.poster)"/>
+
+</p>
+</figure>
+</article>
+<div class="media-content">
+<div class="content">
+<h1>$(,pvoedetaoñs.title)</h1>
+<h4>$(moviedetails.genre)</h4>
+<p>$(moviedetail.plot)</p>
+
+</div>
+<article data-values=$(awards) class="notification is primary">
+<p class="title">$(moviedetail.awards)</p>
+<p class="subtitle">awards</p>
+
+<article data-values=$(dollars) class="notification is primary">
+<p class="title">$(moviedetail.boxoffice)</p>
+<p class="subtitle">boxoffice</p>
+
+<article data-values=$(metascore) class="notification is primary">
+<p class="title">$(moviedetail.metascore)</p>
+<p class="subtitle">metascore</p>
+
+<article data-values=$(imdbrating) class="notification is primary">
+<p class="title">$(moviedetail.imdbrating)</p>
+<p class="subtitle">imdbrating</p>
+
+
+<article data-values=$(imdbvotes) class="notification is primary">
+<p class="title">$(moviedetail.imdbvotes)</p>
+<p class="subtitle">imDB votes</p>
+
+
+
+
+</article>
+`
+
+
 
 
                   
